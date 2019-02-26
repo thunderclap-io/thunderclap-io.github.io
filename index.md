@@ -84,7 +84,7 @@ Thunderbolt access control is a mechanism by which Windows and some Linux system
 
 We don't break Thunderbolt access control; the Thunderclap vulnerabilities are orthogonal to it and are more fundamental.  However we also believe Thunderbolt access control is insufficient in a number of respects.
 
-First, MacOS does not implement access control prompts; it contains a whitelist of approved Thunderbolt devices that are automatically permitted.  This means it's simply necessary for an attacker to purchase an approved Thunderbolt dock and access is granted.
+First, macOS does not implement access control prompts; it contains a whitelist of approved Thunderbolt devices that are automatically permitted.  This means it's simply necessary for an attacker to purchase an approved Thunderbolt dock and access is granted.
 
 Second, when given an all-or-nothing prompt (approve or deny), users are habituated to clicking 'accept'.  In particular, since the prompt does not give sufficient indication of what access the device is requesting, users cannot make an informed judgement about whether to allow it.  For example, above an attacker can simply label their device as a 'CalDigit TS3' to lull users into a false sense of security.
 
@@ -110,7 +110,7 @@ Thunderclap uses DMA, a lower-level technique which allows much more privileged 
 
 We disclosed these vulnerabilities to vendors in 2016 and have worked with them as they developed fixes.
 
-In MacOS 10.12.4 and later, Apple addressed the specific network card vulnerability we used to achieve a root shell.  However the general scope of our work still applies; in particular that Thunderbolt devices have access to all network traffic and sometimes keystrokes and framebuffer data.
+In macOS 10.12.4 and later, Apple addressed the specific network card vulnerability we used to achieve a root shell.  However the general scope of our work still applies; in particular that Thunderbolt devices have access to all network traffic and sometimes keystrokes and framebuffer data.
 
 Microsoft have enabled support for the IOMMU for Thunderbolt devices in Windows 10 version 1803, which shipped in 2018. Earlier hardware upgraded to 1803 requires a firmware update from the vendor.  This brings them into line with the baseline for our work, however the more complex vulnerabilities we describe remain relevant.
 

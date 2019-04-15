@@ -51,10 +51,7 @@ To use Thunderclap, the recommended shopping list is as follows:
 
 For this you need a computer with a serial terminal program and a means to write disk images to SD cards via [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/files/latest/download?source=navbar), dd or [balenaEtcher](https://www.balena.io/etcher/)
 
-1. Download a Thunderclap Ubuntu SD card image
-
-FIXME
-
+1. Download a Thunderclap Ubuntu SD card image from the [releases page](https://github.com/thunderclap-io/thunderclap-ubuntu-sdcard/releases).
 2. Write the image to your micro SD card using a raw image writing tool.
 3. Push the micro SD card into the slot on the PE1 board backplate (should click into place)
 4. Attach your micro USB cable to your computer
@@ -159,4 +156,4 @@ Init done. Let's go.
 
 At this point we're ready to hotplug the Thunderclap platform into our target.  We won't see more messages on the console (Thunderclap stays quiet so as to respond to PCIe messages in a timely manner), but if you boot a PCIe PC or plug in to a Thunderbolt port you should see an Intel ethernet controller appear.  This is Thunderclap in operation.
 
-FIXME
+You can now build the [thunderclap-qemu](https://github.com/thunderclap-io/thunderclap-qemu) repository, replacing the supplied /root/thunderclap binary with your own.
